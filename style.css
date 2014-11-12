@@ -1,0 +1,54 @@
+﻿body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: .5em 0 1em;
+}
+
+#grid {
+    margin: 1em auto 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+    #grid td {
+        border: 1px solid gray;
+    }
+
+@-webkit-keyframes birth {
+    50% {
+        box-shadow: 0 0 0 99px green inset;
+    }
+}
+
+@keyframes birth {
+    50% {
+        box-shadow: 0 0 0 99px green inset;
+    }
+}
+
+#grid input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: white;
+}
+
+    #grid input[type="checkbox"]:checked {
+        box-shadow: 0 0 0 99px black inset;
+        -webkit-animation: birth 1s;
+        animation: birth 1s;
+    }
+
+input[type="checkbox"]:checked + label.button {
+    background-image: none;
+    box-shadow: 0 .1em .3em rgba(0,0,0,.5) inset;
+}
+
+
